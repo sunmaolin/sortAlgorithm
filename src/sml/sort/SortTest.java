@@ -12,6 +12,8 @@ public class SortTest {
         //测试选择排序
         SelectionSort.sort(array);
 
+        //测试插入排序
+        InsertionSort.sort(array);
 
 
     }
