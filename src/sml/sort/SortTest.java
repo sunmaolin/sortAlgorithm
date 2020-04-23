@@ -9,6 +9,8 @@ public class SortTest {
         //测试冒泡排序
         BubbleSort.sort(array);
 
+        //测试选择排序
+        SelectionSort.sort(array);
 
 
 
