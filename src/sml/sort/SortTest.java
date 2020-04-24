@@ -15,6 +15,9 @@ public class SortTest {
         //测试插入排序
         InsertionSort.sort(array);
 
+        //测试希尔排序
+        ShellSort.sort(array);
+
 
     }
 }

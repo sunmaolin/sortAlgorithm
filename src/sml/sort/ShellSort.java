@@ -20,10 +20,10 @@ public class ShellSort {
         while(gap>0){
             for (int i = gap; i < array.length; i++) {
                 temp = array[i];
-                int preIndex = temp - i;
+                int preIndex = i - gap;
                 while(preIndex >= 0 && array[preIndex] > temp){
                     array[preIndex + gap] = array[preIndex];
-                    preIndex--;
+                    preIndex -= gap;
                 }
                 array[preIndex + gap] = temp;
             }
