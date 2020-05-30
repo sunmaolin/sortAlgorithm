@@ -16,6 +16,8 @@ public class BubbleSort {
 
         //临时变量，交换时用作中间体
         int temp = 0;
+        //对算法进行优化,当第n次排序没有发生变化时则说明已经排序完成
+        boolean flag = false;
 
         if (array.length == 0)
             System.out.println("空数组");
@@ -23,10 +25,16 @@ public class BubbleSort {
             //循环出最大值与最后一个数不需要比较
             for (int j = 0; j < array.length - i - 1; j++) {
                 if(array[j] > array[j+1]){
+                    flag = true;
                     temp = array[j];
                     array[j] = array[j+1];
                     array[j+1] = temp;
                 }
+            }
+            if(!flag){
+                break;
+            }else{
+                flag = false;
             }
         }
 
