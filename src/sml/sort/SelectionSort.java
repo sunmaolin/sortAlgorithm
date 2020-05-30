@@ -17,7 +17,7 @@ public class SelectionSort {
 
         if(array.length == 0)
             System.out.println("数组为空");
-        for (int i = 0; i < array.length; i++) {
+        for (int i = 0; i < array.length -1; i++) {
             int minIndex = i;
             //与冒泡排序相似，这里找到的最小值无需循环
             for (int j = i; j < array.length; j++) {
@@ -25,9 +25,11 @@ public class SelectionSort {
                     minIndex = j; //将最小数的索引保存
                 }
             }
-            int temp = array[i];
-            array[i] = array[minIndex];
-            array[minIndex] = temp;
+            if(minIndex != i){ //插入优化
+                int temp = array[i];
+                array[i] = array[minIndex];
+                array[minIndex] = temp;
+            }
         }
 
         System.out.println(Arrays.toString(array));
