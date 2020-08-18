@@ -23,5 +23,9 @@ public class SortTest {
         //测试快速排序
 //        QuickSort.sort(array,0,array.length-1);
 
+        //测试归并排序
+        MergeSort.sort(array,0,array.length-1,new int[array.length]);
+        System.out.println(Arrays.toString(array));
+
     }
 }
