@@ -24,8 +24,10 @@ public class SortTest {
 //        QuickSort.sort(array,0,array.length-1);
 
         //测试归并排序
-        MergeSort.sort(array,0,array.length-1,new int[array.length]);
-        System.out.println(Arrays.toString(array));
+//        MergeSort.sort(array,0,array.length-1,new int[array.length]);
+//        System.out.println(Arrays.toString(array));
 
+        //测试基数排序（桶排序）
+        RadixSort.sort(array);
     }
 }
