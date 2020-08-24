@@ -25,7 +25,7 @@ public class SelectionSort {
                     minIndex = j; //将最小数的索引保存
                 }
             }
-            if(minIndex != i){ //插入优化
+            if(minIndex != i){ //选择优化
                 int temp = array[i];
                 array[i] = array[minIndex];
                 array[minIndex] = temp;
