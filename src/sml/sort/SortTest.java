@@ -28,6 +28,9 @@ public class SortTest {
 //        System.out.println(Arrays.toString(array));
 
         //测试基数排序（桶排序）
-        RadixSort.sort(array);
+//        RadixSort.sort(array);
+
+        //测试堆排序
+        HeapSort.sort(array);
     }
 }
